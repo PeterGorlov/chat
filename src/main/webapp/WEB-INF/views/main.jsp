@@ -77,7 +77,7 @@
                 msgBlock.className = "msg";
                 let fromBlock = document.createElement("div");
                 fromBlock.className = "from";
-                fromBlock.inerText = msg.name;
+                fromBlock.innerText = msg.name;
                 let textBlock = document.createElement("div");
                 textBlock.className = "text";
                 textBlock.innerText = msg.text;
