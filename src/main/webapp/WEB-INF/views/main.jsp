@@ -47,7 +47,7 @@
                 this.chatbox = document.querySelector(".chatbox");
 
                 this.startBtn = this.startbox.querySelector("button");
-                this.nameInput = this.startbox.querySelector(".username");
+                this.nameInput = this.startbox.querySelector("input");
 
                 this.msgTextArea = this.chatbox.querySelector("textarea")
                 this.chatMessageContainer = this.chatbox.querySelector(".messages")
@@ -91,8 +91,8 @@
 
             },
             sendMessage(msg) {
-                this.onMessage({name: "I`m",text:msg.text})
-                this.msgTextArea.value="";
+                this.onMessage({name: "I`m", text: msg.text})
+                this.msgTextArea.value = "";
                 this.ws.send(JSON.stringify(msg));
             },
             openSocket() {
@@ -114,12 +114,15 @@
 <body>
 <h1>Chat Box</h1>
 <div class="start">
-    <input type="text" class="username" placeholder="Enter name">
+    <input type="text" class="username" placeholder="enter name...">
     <button id="start">Start</button>
 </div>
 <div class="chatbox">
     <div class="messages">
-
+        <div class="msg">
+            <div class="from">Stepan</div>
+            <div class="text">Hello</div>
+        </div>
     </div>
     <textarea class="msg">
 
