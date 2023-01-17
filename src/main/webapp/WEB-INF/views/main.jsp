@@ -119,10 +119,7 @@
 </div>
 <div class="chatbox">
     <div class="messages">
-        <div class="msg">
-            <div class="from">Stepan</div>
-            <div class="text">Hello</div>
-        </div>
+
     </div>
     <textarea class="msg">
 
